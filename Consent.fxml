@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4e3e3" height="569.0" layoutX="-1.0" layoutY="204.0" stroke="#9db5b0" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="412.0" />
+      <Label layoutX="37.0" layoutY="74.0" text="HURRAY!" textFill="#7e679b">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="100.0" prefHeight="50.0" prefWidth="336.0" text="YOU ARE JUST ONE STEP AWAY FROM YOUR NEW FAMILY MEMBER!" textFill="#9db5b0" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <CheckBox id="consent2" fx:id="consent2" layoutX="23.0" layoutY="320.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="319.0" text="I CONSENT TO SHARING THE FOLLOWING INFORMATION WITH THE ADOPTION AGENCY AND/OR ANY GOVERMENTAL ORGANZGAZTION IN CASE OF EMERGENCY" textFill="#7e679b" wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font></CheckBox>
+      <CheckBox id="consent1" fx:id="consent1" layoutX="23.0" layoutY="263.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="319.0" text="I CONSENT TO HAVING READ THE TERMS AND CONDITIONS." textFill="#7e679b" wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font></CheckBox>
+      <Button id="adoptionFormsButton" fx:id="proceedButtonConsent" layoutX="150.0" layoutY="452.0" mnemonicParsing="false" onAction="#DeletePet" onMouseExited="#consentZoomOut" onMouseMoved="#consentZoomIn" style="-fx-background-color: #9DB5B0; -fx-background-radius: 10;" text="Proceed">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToPetInfo" style="-fx-background-color: transparent; -fx-background-radius: 150;" text="&lt;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="209.0" fitWidth="148.0" layoutX="278.0" layoutY="474.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/Brazuca%20-%20Dog.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

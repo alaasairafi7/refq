@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <left>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="412.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4e3e3" height="651.0" layoutX="1.0" layoutY="70.0" stroke="#9db5b0" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="412.0" />
+            <Label layoutX="18.0" layoutY="159.0" lineSpacing="5.0" text="Pet Name:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="507.0" lineSpacing="5.0" text="Brief description about your furry friend!" wrapText="true">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="petNameUser" layoutX="20.0" layoutY="181.0" prefHeight="34.0" prefWidth="234.0" style="-fx-background-radius: 5; -fx-pref-height: 35;" />
+            <TextArea fx:id="petDescriptionUser" layoutX="14.0" layoutY="526.0" prefHeight="96.0" prefWidth="382.0" style="-fx-border-color: white;" />
+            <Button fx:id="PetFormSubmit" layoutX="157.0" layoutY="637.0" mnemonicParsing="false" onAction="#switchToThanks" prefHeight="40.0" prefWidth="89.0" style="-fx-background-color: #9DB5B0; -fx-background-radius: 10;" text="Submit">
+               <font>
+                  <Font name="Times New Roman" size="17.0" />
+               </font></Button>
+            <Label layoutX="16.0" layoutY="360.0" lineSpacing="5.0" text="Pet Age:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="petBreedUser" layoutX="17.0" layoutY="316.0" prefHeight="39.0" prefWidth="230.0" style="-fx-background-radius: 5; -fx-pref-height: 35;" />
+            <Label layoutX="16.0" layoutY="435.0" lineSpacing="5.0" text="Pet Gender:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="296.0" lineSpacing="5.0" text="Breed:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="petAgeUser" layoutX="16.0" layoutY="380.0" prefHeight="39.0" prefWidth="240.0" style="-fx-background-radius: 5; -fx-pref-height: 35;" />
+            <Label layoutX="18.0" layoutY="226.0" lineSpacing="5.0" text="Pet Type:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="petTypeUser" layoutX="19.0" layoutY="245.0" prefHeight="38.0" prefWidth="234.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-pref-height: 35;" />
+            <RadioButton fx:id="female" layoutX="105.0" layoutY="464.0" mnemonicParsing="false" text="Female">
+               <toggleGroup>
+                  <ToggleGroup fx:id="genderPet" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="male" layoutX="28.0" layoutY="463.0" mnemonicParsing="false" text="Male" toggleGroup="$genderPet" />
+            <TextField fx:id="petImage" layoutX="20.0" layoutY="123.0" prefHeight="32.0" prefWidth="235.0" style="-fx-background-radius: 5; -fx-pref-height: 35;" />
+            <Label layoutX="17.0" layoutY="105.0" lineSpacing="5.0" text="Pet Image:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Text layoutX="169.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pet Form">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="10.0" layoutY="6.0" mnemonicParsing="false" onAction="#switchToHomePages" style="-fx-background-color: transparent; -fx-background-radius: 150;" text="&lt;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="fileChooserButton" layoutX="261.0" layoutY="122.0" mnemonicParsing="false" onAction="#openButton" prefHeight="30.0" prefWidth="129.0" text="Upload Image" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
